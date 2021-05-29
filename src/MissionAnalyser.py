@@ -47,7 +47,7 @@ while True:
         enforced_constraints = [item for j in enforced_constraints for item in j]
 
         break
-
+        
     elif opt == 2:
         name = input("\nEnter the name of your rocket: ")
         rocket = load(name)
@@ -69,7 +69,7 @@ while True:
             try: print(f"{count}. {const}: {defined_constraints[const]}")
             except: print(f"{count}. {const}")
         count +=1
-
+    
     user_const = input("\nUsing SI units, set a constraint (idx lower_bound upper_bound) or type \"done\" to end the script: ")
     
     if (user_const.lower()) == "done":
